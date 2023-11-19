@@ -5,7 +5,7 @@
 ## Parameter fitting
 If we consider the periodic discrete function:
 
-$$ f(t) = f(t + T) \ \ \ \ \ \forall t \in \{ 0, 1, 2, ..., T-1 \}$$
+$$ f(t) = f(t + T) \ \ \ \ \ \forall t \in { 0, 1, 2, ..., T-1 }$$
 
 The N degree fourier series is defined as:
 
