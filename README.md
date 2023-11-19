@@ -4,9 +4,11 @@
 
 ## Parameter fitting
 If we consider the periodic discrete function:
+
 $$ f(t) = f(t + T) \ \ \ \ \ \forall t \in \{ 0, 1, 2, ..., T-1 \}$$
 
 The N degree fourier series is defined as:
+
 $$ f_{N}(t) = \sum_{n=-N}^{N} c_{n} e^{2 \pi i n \frac{t}{T}} $$
 
 $$ c_{n} = \frac{1}{T} \int_{0}^{T} f(t) e^{-2 \pi i n \frac{t}{T}} dt 
@@ -23,7 +25,9 @@ $$ c_{n}
     
 
 If we consider the 2 arrays:
+
 $$ v_{i} = f(i) \ \ \ \ \ \forall i \in \{ 0, 1, 2, ..., T-1 \}$$
+
 $$ w_{k} = e^{-2 \pi i n \frac{k}{T}} \ \ \ \ \ \forall k \in \{ 0, 1, 2, ..., T-1 \}$$
 
 
