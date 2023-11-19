@@ -1,6 +1,8 @@
 # Fourier_Series_Graph
- The goal is to generate fourier series graphics
+This week, I studied the Fourier Transform in class and decided to investigate it more. I found [the 3Blue1Brown video](https://www.youtube.com/watch?v=r6sGWTCMz2k) about the Discrete Fourier Series and I decided to implement it.
 
+## Drawer
+Drawer.
 
 ## Discrete Fourier Series
 If we consider the periodic discrete function:
