@@ -2,10 +2,10 @@
  The goal is to generate fourier series graphics
 
 
-## Parameter fitting
+## Discrete Fourier Series
 If we consider the periodic discrete function:
 
-$$ f(t) = f(t + T) \ \ \ \ \ \forall t \in { 0, 1, 2, ..., T-1 }$$
+$$ f(t) = f(t + T) \ \ \ \ \ \forall t \in \{ 0, 1, 2, ..., T-1 \} $$
 
 The N degree fourier series is defined as:
 
@@ -25,7 +25,7 @@ $$ c_{n} \approx \frac{1}{T} \sum_{t=0}^{T-1} \frac{f(t+1)e^{-2 \pi i n \frac{t+
 
 If we consider the 2 arrays:
 
-$$ v_{i} = f(i) \ \ \ \ \ \forall i \in \{ 0, 1, 2, ..., T-1 \}$$
+$$ v_{i} = f(i) \ \ \ \ \ \forall i \in \{ 0, 1, 2, ..., T-1 \} $$
 
 $$ w_{k} = e^{-2 \pi i n \frac{k}{T}} \ \ \ \ \ \forall k \in \{ 0, 1, 2, ..., T-1 \}$$
 
