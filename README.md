@@ -7,7 +7,7 @@ Drawer.
 ## Discrete Fourier Series
 We consider the periodic discrete function defined for every integer value between 0 and T-1:
 
-$$ f(t) = f(t + T) \ \ \ \ \ \forall t \in \{ 0, 1, 2, ..., T-1 \} $$
+$$ f(t) = f(t + T) \ \ \ \ \ \forall t \in \left{ 0, 1, 2, ..., T-1 \right} $$
 
 I'm storing every discrete value in the array $ \vec{w} $ (T dimension):
 
