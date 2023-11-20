@@ -37,11 +37,11 @@ $$ c_{n} \approx \frac{1}{T} \sum_{t=0}^{T-1} \frac{f(t+1)e^{-2 \pi i n \frac{t+
 
 If we consider the 2 arrays:
 
-$$ v_{i} = f(i) \ \ \ \ \ \forall i \in \{ 0, 1, 2, ..., T-1 \} $$
+$$ f(k) = z_{k} \ \ \ \ \ \forall k \in { 0, 1, 2, ..., T-1 } $$
 
 $$ w_{k} = e^{-2 \pi i n \frac{k}{T}} \ \ \ \ \ \forall k \in \{ 0, 1, 2, ..., T-1 \}$$
 
-$$ c_{n} \approx \vec{v} \cdot \vec{w} $$
+$$ c_{n} \approx \vec{z} \cdot \vec{w} $$
 
 
 ## Wave prediction
