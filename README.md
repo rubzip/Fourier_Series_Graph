@@ -1,5 +1,5 @@
 # Fourier_Series_Graph
-This week, I studied the Fourier Transform in class and decided to investigate it more. I found [the 3Blue1Brown video](https://www.youtube.com/watch?v=r6sGWTCMz2k) about the Discrete Fourier Series and I decided to implement it.5
+This week, I studied the Fourier Transform in class and decided to investigate it more. I found [the 3Blue1Brown video](https://www.youtube.com/watch?v=r6sGWTCMz2k) about the Discrete Fourier Series and I decided to implement it.
 
 ## Drawer
 Drawer.
@@ -39,9 +39,11 @@ If we consider the 2 arrays:
 
 $$ f(k) = z_{k} \ \ \ \ \ \forall k \in { 0, 1, 2, ..., T-1 } $$
 
-$$ w_{k} = e^{-2 \pi i n \frac{k}{T}} \ \ \ \ \ \forall k \in \{ 0, 1, 2, ..., T-1 \}$$
+$$ (w_{n})_{k} = e^{-2 \pi i n \frac{k}{T}} \ \ \ \ \ \forall k \in \{ 0, 1, 2, ..., T-1 \}$$
 
-$$ c_{n} \approx \vec{z} \cdot \vec{w} \in \mathbb{C} $$
+Every complex coefficient of the Fourier Series:
+
+$$ c_{n} \approx \vec{z} \cdot \vec{w_{n}} \in \mathbb{C} $$
 
 
 ## Wave prediction
