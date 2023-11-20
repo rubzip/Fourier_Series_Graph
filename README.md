@@ -11,7 +11,7 @@ $$ (x_{k}, y_{k}) \ \ \ \ \ \forall k \in { 0, 1, 2, ..., T-1 } $$
 
 So we define a unique complex sequence as:
 
-$$ z_{k} = x_{k} + i \cdot y_{k}) \ \ \ \ \ \forall k \in { 0, 1, 2, ..., T-1 } $$
+$$ z_{k} = x_{k} + i \cdot y_{k} \ \ \ \ \ \forall k \in { 0, 1, 2, ..., T-1 } $$
 
 We consider the periodic discrete function defined for every integer value between 0 and T-1:
 
