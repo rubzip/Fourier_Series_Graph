@@ -5,13 +5,19 @@ This week, I studied the Fourier Transform in class and decided to investigate i
 Drawer.
 
 ## Discrete Fourier Series
+Every drawing has 2 mathematical sequences of T dots defined as:
+
+$$ (x_{k}, y_{k}) \ \ \ \ \ \forall k \in { 0, 1, 2, ..., T-1 } $$
+
+So we define a unique complex sequence as:
+
+$$ z_{k} = x_{k} + i \cdot y_{k}) \ \ \ \ \ \forall k \in { 0, 1, 2, ..., T-1 } $$
+
 We consider the periodic discrete function defined for every integer value between 0 and T-1:
 
+$$ f(k) = z_{k} \ \ \ \ \ \forall k \in { 0, 1, 2, ..., T-1 } $$
+
 $$ f(t) = f(t + T) \ \ \ \ \ \forall t \in { 0, 1, 2, ..., T-1 } $$
-
-I'm storing every discrete value in the array $ \vec{w} $ (T dimension):
-
-$$ v_{i} = f(i) $$
 
 The N-degree Fourier series is defined as:
 
