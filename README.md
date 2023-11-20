@@ -41,7 +41,7 @@ $$ f(k) = z_{k} \ \ \ \ \ \forall k \in { 0, 1, 2, ..., T-1 } $$
 
 $$ w_{k} = e^{-2 \pi i n \frac{k}{T}} \ \ \ \ \ \forall k \in \{ 0, 1, 2, ..., T-1 \}$$
 
-$$ c_{n} \approx \vec{z} \cdot \vec{w} $$
+$$ c_{n} \approx \vec{z} \cdot \vec{w} \in \mathbb{C} $$
 
 
 ## Wave prediction
