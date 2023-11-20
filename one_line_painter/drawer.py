@@ -19,16 +19,16 @@ class Drawer:
         turtle.onscreenclick(self.remove_path, 3)
         turtle.onscreenclick(self.move_turtle, 1)
         self.screen.onkeypress(
-            self.saveDrawing, "s"
+            self.save_drawing, "s"
         )  # Press 's' key for saving the path
         self.screen.onkeypress(
-            self.closeWindow, "x"
+            self.close_window, "x"
         )  # Press 'x' key to close window
         self.screen.onkeypress(
-            self.increaseLineWidth, "Up"
+            self.increase_line_width, "Up"
         )  # Press 'Up' arrow key to increase line width
         self.screen.onkeypress(
-            self.decreaseLineWidth, "Down"
+            self.decrease_line_width, "Down"
         )  # Press 'Down' arrow key to increase line width
         # self.screen.onkeypress(self.undo_last, "z")
 
@@ -51,10 +51,10 @@ class Drawer:
     def remove_path(self, x=0, y=0):
         if len(self.path) > 0:
             # decision = emergent_window_question("Clear drawing", "Are you about deleting your current drawing? (yes/no)")
-            decision = askyesno(
+            want_to_delete = askyesno(
                 "Clear drawing", "Are you about deleting your current drawing?"
             )
-            if decision:
+            if want_to_delete:
                 self.t.clear()
                 self.path = []
 
@@ -63,29 +63,29 @@ class Drawer:
             self.t.undo()
             self.path.pop()
 
-    def increaseLineWidth(self):
+    def increase_line_width(self):
         self.t.width(self.t.width() + 1)
 
-    def decreaseLineWidth(self):
+    def decrease_line_width(self):
         if self.t.width() > 1:
             self.t.width(self.t.width() - 1)
 
-    def saveDrawing(self):
+    def save_drawing(self):
         if len(self.path) > 0:
             filename = filedialog.asksaveasfilename()
             with open(filename, "w") as f:
                 for x, y in self.path:
                     f.write(f"{x}\t{y}\n")
 
-    def closeWindow(self):
+    def close_window(self):
         if len(self.path) > 0:
-            decision = askyesno("WARNING", "Are you sure to close the program?")
-            if decision:
+            want_to_close = askyesno("WARNING", "Are you sure to close the program?")
+            if want_to_close:
                 want_to_save = askyesno(
                     "Do you want to save?", "Do you want to save the drawing before closing?"
                 )
                 if want_to_save:
-                    self.saveDrawing()
+                    self.save_drawing()
                 self.screen.bye()
         else:
             self.screen.bye()
