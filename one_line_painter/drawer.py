@@ -1,8 +1,9 @@
 import turtle
 
-from tkinter import filedialog
+from tkinter.filedialog import asksaveasfilename
 from tkinter.messagebox import askyesno
 
+from time import sleep
 
 class Drawer:
     def __init__(self):
@@ -30,7 +31,7 @@ class Drawer:
         self.screen.onkeypress(
             self.decrease_line_width, "Down"
         )  # Press 'Down' arrow key to increase line width
-        # self.screen.onkeypress(self.undo_last, "z")
+        self.screen.onkeypress(self.undo_last, "z")
 
         self.screen.mainloop()
 
@@ -62,6 +63,7 @@ class Drawer:
         if len(self.path) > 0:
             self.t.undo()
             self.path.pop()
+            sleep(0.3)
 
     def increase_line_width(self):
         self.t.width(self.t.width() + 1)
@@ -72,7 +74,7 @@ class Drawer:
 
     def save_drawing(self):
         if len(self.path) > 0:
-            filename = filedialog.asksaveasfilename()
+            filename = asksaveasfilename()
             with open(filename, "w") as f:
                 for x, y in self.path:
                     f.write(f"{x}\t{y}\n")
