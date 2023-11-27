@@ -23,11 +23,13 @@ The N-degree Fourier series is defined as:
 
 $$ f_{N}(t) = \sum_{n=-N}^{N} c_{n} e^{2 \pi i n \frac{t}{T}} $$
 
-$$ c_{n} = \frac{1}{T} \int_{0}^{T} f(t) e^{-2 \pi i n \frac{t}{T}} dt 
-= \frac{1}{T} \sum_{t=0}^{T-1} \int_{t}^{t+1} f(t) e^{-2 \pi i n \frac{t}{T}} dt $$
+$$ c_{n} = \frac{1}{T} \int_{0}^{T} f(t) e^{-2 \pi i n \frac{t}{T}} dt $$
 
 
 ## Numerical methods
+For solving some computational problems I have splitted the integral in T different integrals:
+$$ c_{n} = \frac{1}{T} \sum_{t=0}^{T-1} \int_{t}^{t+1} f(t) e^{-2 \pi i n \frac{t}{T}} dt $$
+
 If we consider the approximation for a discrete function:
 
 $$ \int_{a}^{b} f(x) dx \approx (b - a) \frac{f(a)+f(b)}{2} $$
