@@ -17,7 +17,7 @@ class FourierSeries:
         self.signal = signal
         self.T = len(signal)
 
-        self.coefs = np.zeros(2 * N + 1) * 1j
+        self.coefs = 1j * np.zeros(2 * N + 1)
         for i in range(2 * N + 1):
             n = i - N
             arguments = -2j * np.pi * n * np.arange(self.T) / self.T
