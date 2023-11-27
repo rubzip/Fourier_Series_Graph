@@ -50,7 +50,7 @@ $$ c_{n} \approx \frac{1}{T} \sum_{t=0}^{T-1} \frac{f(t+1)e^{-2 \pi i n \frac{t+
 
 If we consider the 2 arrays:
 
-$$ f(k) = z_{k} \ \ \ \ \ \forall k \in { 0, 1, 2, ..., T-1 } $$
+$$ z_{k} = f(k)  \ \ \ \ \ \forall k \in { 0, 1, 2, ..., T-1 } $$
 
 $$ (w_{n})_{k} = e^{-2 \pi i n \frac{k}{T}} \ \ \ \ \ \forall k \in \{ 0, 1, 2, ..., T-1 \}$$
 
