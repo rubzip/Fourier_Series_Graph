@@ -51,7 +51,7 @@ Every complex coefficient of the Fourier Series:
 
 $$ c_{n} \approx \vec{z} \cdot \vec{w_{n}} \in \mathbb{C} $$
 
-This is implemented as:
+This is implemented, as a possible improvement to this code to vectorize the main for loop:
 ```python
 self.coefs = 1j * np.zeros(2 * N + 1)
 for i in range(2 * N + 1):
