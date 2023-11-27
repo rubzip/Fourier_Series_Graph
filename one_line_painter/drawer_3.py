@@ -137,7 +137,7 @@ class Drawer:
 
     def save_drawing(self, *args, **kwargs):
         if len(self.path) > 0:
-            filename = asksaveasfilename()
+            filename = asksaveasfilename(defaultextension=".tsv", filetypes=(("TSV", "*.tsv"), ("All Files", "*.*")))
             with open(filename, "w") as f:
                 f.write("x\ty\n")
                 for x, y in self.path:
