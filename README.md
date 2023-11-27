@@ -4,6 +4,13 @@ This week, I studied the Fourier Transform in class and decided to investigate i
 ## Drawer
 The drawer application was implemented from scratch only using Tkinter. With it, you can create a drawing without lifting the pencil, and get the list of dots as a `.tsv` file.
 
+### How to Use:
+    1. Run the Python code '.py'.
+    2. Left-click and drag on the canvas to draw lines.
+    3. Right-click to delete the drawing.
+    4. Use 'z' to undo the last movement, 'Up' and 'Down' arrows to adjust line width, 's' to save the drawing, 'x' to close the program, and 'h' to display help information.
+
+
 ## Discrete Fourier Series
 Every drawing has 2 mathematical sequences of T dots defined as:
 
