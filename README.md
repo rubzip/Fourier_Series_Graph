@@ -2,7 +2,7 @@
 This week, I studied the Fourier Transform in class and decided to investigate it more. I found [the 3Blue1Brown video](https://www.youtube.com/watch?v=r6sGWTCMz2k) about the Discrete Fourier Series and I decided to implement it.
 
 ## Drawer
-Drawer.
+The drawer application was implemented from scratch only using Tkinter. With it, you can create a drawing without lifting the pencil, and get the list of dots as a `.tsv` file.
 
 ## Discrete Fourier Series
 Every drawing has 2 mathematical sequences of T dots defined as:
