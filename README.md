@@ -88,6 +88,7 @@ for i in range(2 * N + 1):
 ```
 
 ## Wave prediction
+If we have an l-dimension array t, the predicted signal will be an l-dimension array w:
 
 
 
