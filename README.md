@@ -1,14 +1,34 @@
 # Fourier_Series_Graph
 This week, I studied the Fourier Transform in class and decided to investigate it more. I found [the 3Blue1Brown video](https://www.youtube.com/watch?v=r6sGWTCMz2k) about the Discrete Fourier Series and I decided to implement it.
 
-## Drawer
-The drawer application was implemented from scratch only using Tkinter. With it, you can create a drawing without lifting the pencil, and get the list of dots as a `.tsv` file.
+## How to
+### Drawer
+Fourier series graphs need a specific drawing format, in my case we are using drawings generated without leaving blank space between 2 points. So I need to track every point which is drawed and the order between them.
 
-### How to Use:
-1. Run the Python script `.py`.
-2. Left-click and drag on the canvas to draw lines.
-3. Right-click to delete the drawing.
-4. Use 'z' to undo the last movement, 'Up' and 'Down' arrows to adjust line width, 's' to save the drawing, 'x' to close the program, and 'h' to display help information.
+I didn't found any useful aplication for this task, and I implemented it using `Tkinter`. For calling this program you only need to type in terminal:
+```
+python3 drawer.py
+```
+Once the program is open, you only need to drag the red point through the screen to draw lines.
+
+Some useful commands: 
+- **s**: to save drawing
+- **x**: exit
+- **z**: undo movement
+- **h**: to show help.
+- **Right-Click**: to delete all lines.
+- **Up key**: to increase line width.
+- **Down key**: to decrease line width.
+
+### Fourier Series Image Generator
+This script takes a `TSV` file and returns images with the n-degree Fourier Series graph.  
+For calling this program you only need to type in terminal:
+```
+python3 main.py -i input.tsv -n n1 n2 n3 n4 ... -o output
+```
+- `input.tsv`: File with all points of the drawing sorted.
+- `ni`: degree of Fourier Series.
+- `output`: name of output file.
 
 
 ## Discrete Fourier Series
