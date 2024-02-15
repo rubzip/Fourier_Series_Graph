@@ -92,7 +92,7 @@ If we have an l-dimension array t, the predicted signal will be an l-dimension a
 
 $$ (args_{n})_{k} = -2\pi i\frac{t_{k}}{T}n \ \ \ \ \ \forall k \in { 0, 1, 2, ..., l-1 } \ \ \ \forall n \in { -N, ..., -1, 0, 1, ..., N } $$
 
-
+$$ w(t_{k}) = \vec{c} \cdot exp\left (\overrightarrow{args_{k}}  \right ) $$
 
 
 
