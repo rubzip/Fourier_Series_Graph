@@ -90,11 +90,7 @@ for i in range(2 * N + 1):
 ## Wave prediction
 If we have an l-dimension array t, the predicted signal will be an l-dimension array w:
 
-$$ (args_{n, k}) =  $$
-
-$$ -2\pi i\frac{t_{k}}{T}n $$
-
-$$ \ \ \ \ \ \forall k \in { 0, 1, 2, ..., l-1 } \ \ \ \forall n \in { -N, ..., -1, 0, 1, ..., N } $$
+$$ (args_{n, k}) = -2\pi i\frac{t_{k}}{T}n \ \ \ \ \ 0 \leq k < l \ \ \  -N \leq  n \leq N $$
 
 $$ w(t_{k}) = \vec{c} \cdot exp\left (\overrightarrow{args_{k}}  \right ) $$
 
