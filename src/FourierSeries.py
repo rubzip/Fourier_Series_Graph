@@ -32,7 +32,7 @@ def draw_signal(signal, fname, color):
     """
     plt.figure(figsize = (8,6)) 
     plt.tick_params(left=False, right=False, labelleft=False, labelbottom=False, bottom=False) 
-    plt.plot(-signal.real, -signal.imag, color=color)
+    plt.plot(signal.real, -signal.imag, color=color)
     plt.savefig(fname)
 
 
