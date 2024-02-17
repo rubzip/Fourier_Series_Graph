@@ -1,4 +1,39 @@
 import numpy as np
+from matplotlib import pyplot as plt
+import csv
+
+
+def load_signal(filename):
+    """
+    Imports a signal from a TSV file.
+    """
+    with open(filename) as tsv_file:
+        tsv_reader = csv.reader(tsv_file, delimiter='\t')
+        n = 0
+        array = []
+        for row in tsv_reader:
+            if n > 0:
+                array.append(int(row[0]) + 1j * int(row[1]))
+            n += 1
+        
+        if array[0]!=array[-1]:
+            array.append(array[0])
+        
+        v = np.array(array)
+        mask = (np.zeros(v.shape)==0)
+        mask[1:] = np.diff(v)!=0 # This mask filter consecutive repeated elements [0,0,0,1,1,0] -> [0,1,0]
+
+        return v[mask]
+
+
+def draw_signal(signal, fname, color):
+    """
+    Saves a drawing in fname path.
+    """
+    plt.figure(figsize = (8,6)) 
+    plt.tick_params(left=False, right=False, labelleft=False, labelbottom=False, bottom=False) 
+    plt.plot(-signal.real, -signal.imag, color=color)
+    plt.savefig(fname)
 
 
 class FourierSeries:
